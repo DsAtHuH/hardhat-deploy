@@ -10,6 +10,7 @@
     "chai": "^4.3.4",
     "chai-ethers": "^0.0.1",
     "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
     "ethers": "^5.0.32",
     "hardhat": "^2.1.1",
     "hardhat-deploy": "^0.7.0-beta.50",
@@ -17,5 +18,9 @@
     "mocha": "^8.3.2",
     "ts-node": "^9.1.1",
     "typescript": "^4.2.3"
+  },
+  "scripts": {
+    "hardhat": "node --require esm node_modules/.bin/hardhat",
+    "compile": "tsc --module ES2015 --target ES2015"
   }
 }
