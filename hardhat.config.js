@@ -1,5 +1,7 @@
 import 'hardhat-deploy';
 import 'hardhat-deploy-ethers';
+import '@nomiclabs/hardhat-waffle'
+
 import { node_url, accounts } from './utils/network';
 const config = {
     solidity: {
